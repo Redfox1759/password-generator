@@ -1,6 +1,9 @@
 const passwordBox = document.getElementById("password");
+const passwordBoxValue = document.getElementById("password").value
 const passwordBox2 = document.getElementById("password2");
+const passwordBox2Value = document.getElementById("password").value
 const passwordLength = 12;
+
 
 
 const upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -38,4 +41,15 @@ function createPassword2(){
     password += allChars[Math.floor(Math.random() * allChars.length)]; 
   }
   passwordBox2.value = password;
+}
+
+
+function copyPassword(){
+  passwordBox.select()
+  navigator.clipboard.writeText(passwordBox.value)
+}
+
+function copyPassword2(){
+  passwordBox2.select();
+  navigator.clipboard.writeText(passwordBox2.value);
 }
