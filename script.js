@@ -1,7 +1,7 @@
 const passwordBox = document.getElementById("password");
-const passwordBoxValue = document.getElementById("password").value
+const passwordBoxValue = document.getElementById("password")
 const passwordBox2 = document.getElementById("password2");
-const passwordBox2Value = document.getElementById("password").value
+const passwordBox2Value = document.getElementById("password")
 const passwordLength = 12;
 
 
